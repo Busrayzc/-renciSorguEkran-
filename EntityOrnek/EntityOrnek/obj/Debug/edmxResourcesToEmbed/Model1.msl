@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DbSinavOgrenciModelStoreContainer" CdmEntityContainer="DbSinavOgrenciEntities">
+    <EntitySetMapping Name="TblDersler">
+      <EntityTypeMapping TypeName="DbSinavOgrenciModel.TblDersler">
+        <MappingFragment StoreEntitySet="TblDersler">
+          <ScalarProperty Name="DersId" ColumnName="DersId" />
+          <ScalarProperty Name="DersAd" ColumnName="DersAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblNotlar">
+      <EntityTypeMapping TypeName="DbSinavOgrenciModel.TblNotlar">
+        <MappingFragment StoreEntitySet="TblNotlar">
+          <ScalarProperty Name="NotId" ColumnName="NotId" />
+          <ScalarProperty Name="Ogr" ColumnName="Ogr" />
+          <ScalarProperty Name="Ders" ColumnName="Ders" />
+          <ScalarProperty Name="sinav1" ColumnName="sinav1" />
+          <ScalarProperty Name="sinav2" ColumnName="sinav2" />
+          <ScalarProperty Name="sinav3" ColumnName="sinav3" />
+          <ScalarProperty Name="ortalama" ColumnName="ortalama" />
+          <ScalarProperty Name="durum" ColumnName="durum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblOgrenci">
+      <EntityTypeMapping TypeName="DbSinavOgrenciModel.TblOgrenci">
+        <MappingFragment StoreEntitySet="TblOgrenci">
+          <ScalarProperty Name="OgrenciId" ColumnName="OgrenciId" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="Fotograf" ColumnName="Fotograf" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
